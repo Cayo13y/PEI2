@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo/formulário.css">
+    
+    <link rel="shortcut icon" href="Imagem/esesp.png" type="image/x-icon">
+
+    <title>Inscrições Cursos Presenciais - Esesp - Outubro/25 </title>
+</head>
+<body>
+    <!--Container Principal do formulário-->
+    <div class="container">
+        
+        <!-----Logo Esesp------>
+        <div class="form-image">
+            <img src="Imagem/Logo-Multivix.webp" alt="Logo 50 anos ESESP">
+        </div>
+       
+
+        <!---Formulário--->
+        <div class="form">
+            <form action="#" method="post">
+
+                <!--Título-->
+                <div class="form-header">
+                    <h1>Projeto de Extensão e Inovação Interdisciplinar - PEI2</h1>
+                </div>
+
+                <div class="input-group">
+                    
+                    <div class="input-row">
+                        <!--Nome Completo-->
+                        <div class="input-box">
+                            <label for="name">Nome Completo</label>
+                            <input id="name" type="text" name="name" placeholder="Sua resposta" required>
+                        </div>
+
+                        <!--CPF-->
+                        <div class="input-box">
+                            <label for="cpf">CPF</label>
+                            <input id="cpf" type="text" name="cpf" placeholder="000.000.000-00" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" required>
+                        </div>
+                    </div>
+
+
+                    <div class="input-row">
+                        <!--Email-->
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+
+                        <!--Email Institucional-->
+                        <div class="input-box">
+                            <label for="emailint">Email Institucional</label>
+                            <input id="emailint" type="email" name="emailint" placeholder="Seu e-mail" required>
+                        </div>
+                    </div>
+
+
+                   <div class="input-row">
+                        <!--Telefone-->
+                        <div class="input-box">
+                            <label for="contato">Telefone de Contato</label>
+                            <input id="contato" type="tel" name="contato" placeholder="(99) 99999-9999" required>
+                        </div>
+
+                        <!--Número Funcional-->
+                        <div class="input-box">
+                            <label for="funcional">Número funcional</label>
+                            <input id="funcional" type="text" name="funcional" placeholder="Sua resposta" required>
+                        </div>
+                   </div>
+                   
+
+                   <!--Órgão de Origem-->
+                   <div class="input-box">
+                        <label for="origem">Polo:</label>
+                        <input id="origem" type="text" name="origem" placeholder="Sua resposta" required>
+                   </div>
+
+
+                   <!--Servidores-->
+                   <fieldset>
+                        <legend id="voce">Você é :</legend>
+                        <div>
+                            <input id="professsor" type="radio" name="funcao" value="professor">
+                            <label for="professor">Professor</label>
+                        </div>
+                        <div>
+                            <input id="aluno" type="radio" name="funcao" value="aluno">
+                            <label for="aluno">Aluno</label>
+                        </div>
+                   </fieldset>
+
+
+                   <!--Cursos-->
+                   <div class="input-box">
+                        <label for="cursos">Selecione o(s) Curso(s)</label>
+                        <select id="cursos" name="cursos"></select>
+                   </div>
+
+
+                   <!--Termos-->
+                   <fieldset>
+                        <legend>Estou ciente que esta ficha de pré-inscrição não é a inscrição final e que é necessário realizar os passos de inscrição conforme orientação e divulgação acima.</legend>
+                        <input id="termo1" type="radio" name="termo1" value="ciente">
+                        <label for="termo1">Estou Ciente</label>
+                   </fieldset>
+
+                   <fieldset>
+                        <legend>Estou ciente que os dados inseridos estão protegidos de acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD), Lei n° 13.709/2018.</legend>
+                        <input id="termo2" type="radio" name="termo2" value="ciente">
+                        <label for="termo2">Estou Ciente</label>
+                   </fieldset>
+
+                   <!--Botões-->
+                   <div class="envio">
+                        <button class="btn-enviar" type="submit" id="enviar">Enviar</button>
+                        <button class="btn-limpar" type="reset">Limpar</button>
+                   </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="script/atualização.js"></script>
+
+</html>
